@@ -14,14 +14,14 @@ For a complete list, try the alternative methods below.
 
 ## RECENT POSTS (2024-2025) ##
 
-https://netjoints.com/securing-mcp-servers-for-agentic-ai-a-practical-guide-to-mcp-security-authorization-and-runtime-controls/
-https://netjoints.com/agentic-ai-identities-the-future-of-enterprise-access-control/
-https://netjoints.com/britive-self-service-access-and-permission-builder/
-https://netjoints.com/which-one-is-better-britive-or-cyberark/
-https://netjoints.com/troubleshooting-aws-bedrock-agentcore/
-https://netjoints.com/azure-networking-limitations-and-constraints/
-https://netjoints.com/gcp-networking-limitations/
-https://netjoints.com/whats-the-difference-between-llm-and-dlrm-models/
+* https://netjoints.com/securing-mcp-servers-for-agentic-ai-a-practical-guide-to-mcp-security-authorization-and-runtime-controls/
+* https://netjoints.com/agentic-ai-identities-the-future-of-enterprise-access-control/
+* https://netjoints.com/britive-self-service-access-and-permission-builder/
+* https://netjoints.com/which-one-is-better-britive-or-cyberark/
+* https://netjoints.com/troubleshooting-aws-bedrock-agentcore/
+* https://netjoints.com/azure-networking-limitations-and-constraints/
+* https://netjoints.com/gcp-networking-limitations/
+* https://netjoints.com/whats-the-difference-between-llm-and-dlrm-models/
 
 
 ## BRITIVE / PAM / CYBERSECURITY POSTS ##
@@ -67,12 +67,10 @@ https://netjoints.com/gcp-native-networking-concepts-cheat-sheet/
 
 
 ## INSTRUCTIONS TO GET COMPLETE LIST ##
-
-
-## Since WordPress export wasn't working for me, here are alternatives: ##
+Since WordPress export wasn't working for me, here are alternatives: 
 
 OPTION 1: Use your RSS feed
-#isit: https://netjoints.com/feed/
+Visit: https://netjoints.com/feed/
 This shows your recent posts with URLs
 
 OPTION 2: Use WordPress Sitemap

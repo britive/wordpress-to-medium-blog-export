@@ -12,9 +12,7 @@ HOW TO USE:
 NOTE: This list was compiled via web search and may not include all posts.
 For a complete list, try the alternative methods below.
 
-============================================================
-RECENT POSTS (2024-2025)
-============================================================
+# RECENT POSTS (2024-2025) #
 
 https://netjoints.com/securing-mcp-servers-for-agentic-ai-a-practical-guide-to-mcp-security-authorization-and-runtime-controls/
 https://netjoints.com/agentic-ai-identities-the-future-of-enterprise-access-control/
@@ -25,15 +23,13 @@ https://netjoints.com/azure-networking-limitations-and-constraints/
 https://netjoints.com/gcp-networking-limitations/
 https://netjoints.com/whats-the-difference-between-llm-and-dlrm-models/
 
-============================================================
-# BRITIVE / PAM / CYBERSECURITY POSTS
-============================================================
+
+# BRITIVE / PAM / CYBERSECURITY POSTS #
 
 https://netjoints.com/britive-api-cli-to-trigger-cloud-data-scan/
 
-============================================================
-# AWS POSTS
-============================================================
+
+# AWS POSTS #
 
 https://netjoints.com/aws-control-tower-vending-machine/
 https://netjoints.com/aws-direct-connect-dx/
@@ -42,9 +38,9 @@ https://netjoints.com/aws-direct-connect-and-direct-connect-gateway-limitations/
 https://netjoints.com/aws-nwfw-network-firewall-vs-aviatrix-threatguard-solution/
 https://netjoints.com/aviatrix-user-vpn-deployment-with-aws-udb-based-nlb/
 
-============================================================
-# AVIATRIX / MULTI-CLOUD NETWORKING POSTS
-============================================================
+
+# AVIATRIX / MULTI-CLOUD NETWORKING POSTS #
+
 
 https://netjoints.com/oci-multicloud-transit/
 https://netjoints.com/oci-initial-config/
@@ -56,22 +52,22 @@ https://netjoints.com/what-is-aviatrix-cloudwan/
 https://netjoints.com/sap-on-aviatrix-platform/
 https://netjoints.com/gcp-shared-vpc-network-with-aviatrix-transit-hub-spoke-architecture/
 
-============================================================
-# GCP POSTS
-============================================================
+
+# GCP POSTS #
+
 
 https://netjoints.com/gcp-native-networking-concepts-cheat-sheet/
 
-============================================================
-# PARTNERSHIP / ABOUT PAGES (may not want to import these)
-============================================================
 
-# https://netjoints.com/aws/
-# https://netjoints.com/about/
+# PARTNERSHIP / ABOUT PAGES (may not want to import these) #
 
-============================================================
-# INSTRUCTIONS TO GET COMPLETE LIST
-============================================================
+
+ https://netjoints.com/aws/
+ https://netjoints.com/about/
+
+
+# INSTRUCTIONS TO GET COMPLETE LIST #
+
 
 # Since WordPress export wasn't working for me, here are alternatives:
 
@@ -97,4 +93,4 @@ Popular plugins like Yoast SEO or RankMath create sitemaps
 
  OPTION 5: Check WordPress Admin → Posts → All Posts
  You can see all posts there and manually copy URLs
-============================================================
+

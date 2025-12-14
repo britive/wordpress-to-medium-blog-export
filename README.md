@@ -12,7 +12,7 @@ HOW TO USE:
 NOTE: This list was compiled via web search and may not include all posts.
 For a complete list, try the alternative methods below.
 
-# RECENT POSTS (2024-2025) #
+## RECENT POSTS (2024-2025) ##
 
 https://netjoints.com/securing-mcp-servers-for-agentic-ai-a-practical-guide-to-mcp-security-authorization-and-runtime-controls/
 https://netjoints.com/agentic-ai-identities-the-future-of-enterprise-access-control/
@@ -24,12 +24,12 @@ https://netjoints.com/gcp-networking-limitations/
 https://netjoints.com/whats-the-difference-between-llm-and-dlrm-models/
 
 
-# BRITIVE / PAM / CYBERSECURITY POSTS #
+## BRITIVE / PAM / CYBERSECURITY POSTS ##
 
 https://netjoints.com/britive-api-cli-to-trigger-cloud-data-scan/
 
 
-# AWS POSTS #
+## AWS POSTS ##
 
 https://netjoints.com/aws-control-tower-vending-machine/
 https://netjoints.com/aws-direct-connect-dx/

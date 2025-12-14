@@ -31,39 +31,39 @@ https://netjoints.com/britive-api-cli-to-trigger-cloud-data-scan/
 
 ## AWS POSTS ##
 
-https://netjoints.com/aws-control-tower-vending-machine/
-https://netjoints.com/aws-direct-connect-dx/
-https://netjoints.com/direct-connect-gateway/
-https://netjoints.com/aws-direct-connect-and-direct-connect-gateway-limitations/
-https://netjoints.com/aws-nwfw-network-firewall-vs-aviatrix-threatguard-solution/
-https://netjoints.com/aviatrix-user-vpn-deployment-with-aws-udb-based-nlb/
+* https://netjoints.com/aws-control-tower-vending-machine/
+* https://netjoints.com/aws-direct-connect-dx/
+* https://netjoints.com/direct-connect-gateway/
+* https://netjoints.com/aws-direct-connect-and-direct-connect-gateway-limitations/
+* https://netjoints.com/aws-nwfw-network-firewall-vs-aviatrix-threatguard-solution/
+* https://netjoints.com/aviatrix-user-vpn-deployment-with-aws-udb-based-nlb/
 
 
 ## AVIATRIX / MULTI-CLOUD NETWORKING POSTS ##
 
 
-https://netjoints.com/oci-multicloud-transit/
-https://netjoints.com/oci-initial-config/
-https://netjoints.com/aviatrix-kickstart-spin-up-cloud-networks-in-minutes/
-https://netjoints.com/aviatrix-distributed-cloud-firewall-harnessing-open-source-technologies-for-enhanced-security-using-ebpf-and-suricata/
-https://netjoints.com/aviatrix-transit-in-host-project-and-workload-vms-in-shared-vpc-network/
-https://netjoints.com/connecting-aviatrix-gateway-to-cisco-csr-in-the-same-aws-vpc/
-https://netjoints.com/what-is-aviatrix-cloudwan/
-https://netjoints.com/sap-on-aviatrix-platform/
-https://netjoints.com/gcp-shared-vpc-network-with-aviatrix-transit-hub-spoke-architecture/
+* https://netjoints.com/oci-multicloud-transit/
+* https://netjoints.com/oci-initial-config/
+* https://netjoints.com/aviatrix-kickstart-spin-up-cloud-networks-in-minutes/
+* https://netjoints.com/aviatrix-distributed-cloud-firewall-harnessing-open-source-technologies-for-enhanced-security-using-ebpf-and-suricata/
+* https://netjoints.com/aviatrix-transit-in-host-project-and-workload-vms-in-shared-vpc-network/
+* https://netjoints.com/connecting-aviatrix-gateway-to-cisco-csr-in-the-same-aws-vpc/
+* https://netjoints.com/what-is-aviatrix-cloudwan/
+* https://netjoints.com/sap-on-aviatrix-platform/
+* https://netjoints.com/gcp-shared-vpc-network-with-aviatrix-transit-hub-spoke-architecture/
 
 
 # GCP POSTS #
 
 
-https://netjoints.com/gcp-native-networking-concepts-cheat-sheet/
+* https://netjoints.com/gcp-native-networking-concepts-cheat-sheet/
 
 
 ## PARTNERSHIP / ABOUT PAGES (may not want to import these) ##
 
 
- https://netjoints.com/aws/
- https://netjoints.com/about/
+* https://netjoints.com/aws/
+* https://netjoints.com/about/
 
 
 ## INSTRUCTIONS TO GET COMPLETE LIST ##

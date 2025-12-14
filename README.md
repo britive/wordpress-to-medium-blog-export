@@ -92,3 +92,28 @@ Popular plugins like Yoast SEO or RankMath create sitemaps
  OPTION 5: Check WordPress Admin → Posts → All Posts
  You can see all posts there and manually copy URLs
 
+## Following process worked for me 
+
+I created a Script You Can Run in Browser Console
+
+🚀 Easiest Method (30 seconds)
+Step 1: While on your WordPress Posts page, press F12 (or Cmd+Option+I on Mac) to open Developer Tools
+Step 2: Click the Console tab
+Step 3: Paste this script and press Enter:
+<pre>
+
+(async () => {
+    const allUrls = [];
+    for (let page = 1; page <= 2; page++) {
+        const r = await fetch(`/wp-json/wp/v2/posts?per_page=100&page=${page}&status=publish`);
+        const posts = await r.json();
+        if (!posts.length) break;
+        posts.forEach(p => allUrls.push(p.link));
+    }
+    console.log(`Found ${allUrls.length} posts:`);
+    console.log(allUrls.join('\n'));
+    navigator.clipboard.writeText(allUrls.join('\n'));
+    alert(`✅ ${allUrls.length} URLs copied to clipboard!`);
+})();
+
+    </pre>

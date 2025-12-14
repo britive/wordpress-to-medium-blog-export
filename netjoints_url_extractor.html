@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netjoints.com URL Extractor</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1 {
+            color: #1a1a1a;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0066cc;
+            margin-top: 30px;
+        }
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 6px;
+            text-decoration: none;
+            margin: 5px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .btn:hover {
+            background: #0052a3;
+        }
+        .btn-secondary {
+            background: #666;
+        }
+        .btn-secondary:hover {
+            background: #555;
+        }
+        .btn-success {
+            background: #28a745;
+        }
+        .btn-success:hover {
+            background: #218838;
+        }
+        textarea {
+            width: 100%;
+            height: 300px;
+            font-family: monospace;
+            font-size: 13px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            resize: vertical;
+        }
+        .step {
+            background: #e8f4fc;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .step-number {
+            background: #0066cc;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        code {
+            background: #f0f0f0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .url-list {
+            max-height: 400px;
+            overflow-y: auto;
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 6px;
+            margin-top: 15px;
+        }
+        .url-item {
+            padding: 8px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .url-item:hover {
+            background: #f0f0f0;
+        }
+        .copy-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .copy-btn:hover {
+            background: #218838;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .status-success {
+            background: #d4edda;
+            color: #155724;
+        }
+        .status-error {
+            background: #f8d7da;
+            color: #721c24;
+        }
+        .status-info {
+            background: #d1ecf1;
+            color: #0c5460;
+        }
+        #results {
+            margin-top: 20px;
+        }
+        .found-urls {
+            list-style: none;
+            padding: 0;
+        }
+        .found-urls li {
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        .found-urls li:nth-child(even) {
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1>🔗 netjoints.com URL Extractor for Medium Import</h1>
+    
+    <div class="card">
+        <h2>📋 Quick Links to Try</h2>
+        <p>Click these links to check which method works for your site:</p>
+        
+        <a href="https://netjoints.com/wp-json/wp/v2/posts?per_page=100" target="_blank" class="btn">REST API (Best)</a>
+        <a href="https://netjoints.com/feed/" target="_blank" class="btn btn-secondary">RSS Feed</a>
+        <a href="https://netjoints.com/wp-sitemap-posts-post-1.xml" target="_blank" class="btn btn-secondary">WP Sitemap</a>
+        <a href="https://netjoints.com/sitemap.xml" target="_blank" class="btn btn-secondary">Sitemap.xml</a>
+        <a href="https://netjoints.com/post-sitemap.xml" target="_blank" class="btn btn-secondary">Post Sitemap</a>
+    </div>
+
+    <div class="card">
+        <h2>🚀 Method 1: REST API (Recommended)</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            Click the button above or visit: <code>https://netjoints.com/wp-json/wp/v2/posts?per_page=100</code>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            If you see JSON data, copy ALL of it
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            Paste it in the box below and click "Extract URLs"
+        </div>
+        
+        <textarea id="jsonInput" placeholder="Paste the JSON from REST API here..."></textarea>
+        <br><br>
+        <button class="btn btn-success" onclick="extractFromJSON()">Extract URLs from JSON</button>
+    </div>
+
+    <div class="card">
+        <h2>📰 Method 2: RSS Feed</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            Visit <code>https://netjoints.com/feed/</code>
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            View page source (Ctrl+U or Cmd+U)
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            Copy all XML content and paste below
+        </div>
+        
+        <textarea id="rssInput" placeholder="Paste RSS XML here..."></textarea>
+        <br><br>
+        <button class="btn btn-success" onclick="extractFromRSS()">Extract URLs from RSS</button>
+    </div>
+
+    <div class="card">
+        <h2>🗺️ Method 3: Sitemap</h2>
+        <div class="step">
+            <span class="step-number">1</span>
+            Try visiting any of the sitemap URLs above
+        </div>
+        <div class="step">
+            <span class="step-number">2</span>
+            View page source and copy the XML
+        </div>
+        <div class="step">
+            <span class="step-number">3</span>
+            Paste below and click Extract
+        </div>
+        
+        <textarea id="sitemapInput" placeholder="Paste Sitemap XML here..."></textarea>
+        <br><br>
+        <button class="btn btn-success" onclick="extractFromSitemap()">Extract URLs from Sitemap</button>
+    </div>
+
+    <div id="results"></div>
+
+    <div class="card">
+        <h2>📥 Known URLs (Found via Search)</h2>
+        <p>These URLs were found through web search. Click to copy each one for Medium import:</p>
+        
+        <div class="url-list">
+            <div class="url-item">
+                <span>https://netjoints.com/securing-mcp-servers-for-agentic-ai-a-practical-guide-to-mcp-security-authorization-and-runtime-controls/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/agentic-ai-identities-the-future-of-enterprise-access-control/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/britive-self-service-access-and-permission-builder/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/which-one-is-better-britive-or-cyberark/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/troubleshooting-aws-bedrock-agentcore/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/azure-networking-limitations-and-constraints/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/gcp-networking-limitations/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/whats-the-difference-between-llm-and-dlrm-models/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/aws-control-tower-vending-machine/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/aws-direct-connect-dx/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/direct-connect-gateway/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/oci-multicloud-transit/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/aviatrix-kickstart-spin-up-cloud-networks-in-minutes/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/aviatrix-distributed-cloud-firewall-harnessing-open-source-technologies-for-enhanced-security-using-ebpf-and-suricata/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/connecting-aviatrix-gateway-to-cisco-csr-in-the-same-aws-vpc/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/what-is-aviatrix-cloudwan/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/sap-on-aviatrix-platform/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/gcp-native-networking-concepts-cheat-sheet/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/aws-nwfw-network-firewall-vs-aviatrix-threatguard-solution/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+            <div class="url-item">
+                <span>https://netjoints.com/gcp-shared-vpc-network-with-aviatrix-transit-hub-spoke-architecture/</span>
+                <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+            </div>
+        </div>
+        
+        <br>
+        <button class="btn" onclick="copyAllKnown()">Copy All Known URLs</button>
+        <a href="https://medium.com/p/import" target="_blank" class="btn btn-success">Open Medium Import →</a>
+    </div>
+
+    <script>
+        function extractFromJSON() {
+            const input = document.getElementById('jsonInput').value.trim();
+            if (!input) {
+                showResult('error', 'Please paste JSON data first');
+                return;
+            }
+            
+            try {
+                const data = JSON.parse(input);
+                const urls = [];
+                
+                if (Array.isArray(data)) {
+                    data.forEach(post => {
+                        if (post.link) {
+                            urls.push({
+                                url: post.link,
+                                title: post.title?.rendered || 'Untitled',
+                                date: post.date || ''
+                            });
+                        }
+                    });
+                }
+                
+                displayResults(urls, 'REST API');
+            } catch (e) {
+                showResult('error', 'Invalid JSON. Make sure you copied the entire response. Error: ' + e.message);
+            }
+        }
+
+        function extractFromRSS() {
+            const input = document.getElementById('rssInput').value.trim();
+            if (!input) {
+                showResult('error', 'Please paste RSS XML first');
+                return;
+            }
+            
+            try {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(input, 'text/xml');
+                const items = doc.querySelectorAll('item');
+                const urls = [];
+                
+                items.forEach(item => {
+                    const link = item.querySelector('link')?.textContent;
+                    const title = item.querySelector('title')?.textContent;
+                    const pubDate = item.querySelector('pubDate')?.textContent;
+                    
+                    if (link) {
+                        urls.push({
+                            url: link,
+                            title: title || 'Untitled',
+                            date: pubDate || ''
+                        });
+                    }
+                });
+                
+                displayResults(urls, 'RSS Feed');
+            } catch (e) {
+                showResult('error', 'Invalid RSS XML. Error: ' + e.message);
+            }
+        }
+
+        function extractFromSitemap() {
+            const input = document.getElementById('sitemapInput').value.trim();
+            if (!input) {
+                showResult('error', 'Please paste Sitemap XML first');
+                return;
+            }
+            
+            try {
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(input, 'text/xml');
+                const locs = doc.querySelectorAll('url loc');
+                const urls = [];
+                
+                locs.forEach(loc => {
+                    const url = loc.textContent;
+                    // Filter out non-post URLs
+                    if (url && !url.includes('/category/') && 
+                        !url.includes('/tag/') && 
+                        !url.includes('/author/') &&
+                        url !== 'https://netjoints.com/' &&
+                        url !== 'https://netjoints.com') {
+                        urls.push({
+                            url: url,
+                            title: '',
+                            date: ''
+                        });
+                    }
+                });
+                
+                displayResults(urls, 'Sitemap');
+            } catch (e) {
+                showResult('error', 'Invalid Sitemap XML. Error: ' + e.message);
+            }
+        }
+
+        function displayResults(urls, source) {
+            if (urls.length === 0) {
+                showResult('error', 'No URLs found in the ' + source);
+                return;
+            }
+            
+            let html = `
+                <div class="card">
+                    <h2>✅ Found ${urls.length} URLs from ${source}</h2>
+                    <div class="status status-success">Successfully extracted ${urls.length} post URLs!</div>
+                    <button class="btn" onclick="copyExtractedUrls()">Copy All URLs</button>
+                    <a href="https://medium.com/p/import" target="_blank" class="btn btn-success">Open Medium Import →</a>
+                    
+                    <ul class="found-urls" id="extractedUrls">
+            `;
+            
+            urls.forEach((item, index) => {
+                html += `
+                    <li>
+                        <span>${index + 1}.</span>
+                        <span style="flex:1">
+                            <a href="${item.url}" target="_blank">${item.url}</a>
+                            ${item.title ? `<br><small style="color:#666">${item.title}</small>` : ''}
+                        </span>
+                        <button class="copy-btn" onclick="copyUrl(this)">Copy</button>
+                    </li>
+                `;
+            });
+            
+            html += '</ul></div>';
+            
+            document.getElementById('results').innerHTML = html;
+            
+            // Store URLs for copy all function
+            window.extractedUrls = urls.map(u => u.url);
+        }
+
+        function showResult(type, message) {
+            document.getElementById('results').innerHTML = `
+                <div class="status status-${type}">${message}</div>
+            `;
+        }
+
+        function copyUrl(btn) {
+            const url = btn.parentElement.querySelector('span, a').textContent.trim();
+            navigator.clipboard.writeText(url).then(() => {
+                btn.textContent = 'Copied!';
+                btn.style.background = '#666';
+                setTimeout(() => {
+                    btn.textContent = 'Copy';
+                    btn.style.background = '#28a745';
+                }, 1500);
+            });
+        }
+
+        function copyExtractedUrls() {
+            if (window.extractedUrls) {
+                navigator.clipboard.writeText(window.extractedUrls.join('\n')).then(() => {
+                    alert('Copied ' + window.extractedUrls.length + ' URLs to clipboard!');
+                });
+            }
+        }
+
+        function copyAllKnown() {
+            const urls = [];
+            document.querySelectorAll('.url-list .url-item span').forEach(span => {
+                urls.push(span.textContent.trim());
+            });
+            navigator.clipboard.writeText(urls.join('\n')).then(() => {
+                alert('Copied ' + urls.length + ' URLs to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>

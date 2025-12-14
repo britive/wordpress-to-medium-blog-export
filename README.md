@@ -39,7 +39,7 @@ https://netjoints.com/aws-nwfw-network-firewall-vs-aviatrix-threatguard-solution
 https://netjoints.com/aviatrix-user-vpn-deployment-with-aws-udb-based-nlb/
 
 
-# AVIATRIX / MULTI-CLOUD NETWORKING POSTS #
+## AVIATRIX / MULTI-CLOUD NETWORKING POSTS ##
 
 
 https://netjoints.com/oci-multicloud-transit/
@@ -59,17 +59,17 @@ https://netjoints.com/gcp-shared-vpc-network-with-aviatrix-transit-hub-spoke-arc
 https://netjoints.com/gcp-native-networking-concepts-cheat-sheet/
 
 
-# PARTNERSHIP / ABOUT PAGES (may not want to import these) #
+## PARTNERSHIP / ABOUT PAGES (may not want to import these) ##
 
 
  https://netjoints.com/aws/
  https://netjoints.com/about/
 
 
-# INSTRUCTIONS TO GET COMPLETE LIST #
+## INSTRUCTIONS TO GET COMPLETE LIST ##
 
 
-# Since WordPress export wasn't working for me, here are alternatives:
+## Since WordPress export wasn't working for me, here are alternatives: ##
 
 OPTION 1: Use your RSS feed
 #isit: https://netjoints.com/feed/

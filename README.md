@@ -97,9 +97,10 @@ Popular plugins like Yoast SEO or RankMath create sitemaps
 I created a Script You Can Run in Browser Console
 
 🚀 Easiest Method (30 seconds)
-Step 1: While on your WordPress Posts page, press F12 (or Cmd+Option+I on Mac) to open Developer Tools
-Step 2: Click the Console tab
-Step 3: Paste this script and press Enter:
+- Step 1: While on your WordPress Posts page, press F12 (or Cmd+Option+I on Mac) to open Developer Tools
+- Step 2: Click the Console tab
+- Step 3: Paste this script and press Enter:
+
 <pre>
 
 (async () => {
@@ -117,3 +118,48 @@ Step 3: Paste this script and press Enter:
 })();
 
     </pre>
+
+- Step 4: All 151 URLs will be copied to your clipboard!
+- Step 5: Go to https://medium.com/p/import and paste one URL at a time to import
+
+
+If you get notepad permission error
+
+<pre>
+Uncaught (in promise) NotAllowedError: Failed to execute 'writeText' on 'Clipboard': Document is not focused.
+    at <anonymous>:11:25
+
+</pre>
+
+
+Then run the following script in the browser 
+
+<pre>
+
+(async () => {
+    const allUrls = [];
+    for (let page = 1; page <= 2; page++) {
+        const r = await fetch(`/wp-json/wp/v2/posts?per_page=100&page=${page}&status=publish`);
+        const posts = await r.json();
+        if (!posts.length) break;
+        posts.forEach(p => allUrls.push(p.link));
+    }
+    console.log(`Found ${allUrls.length} posts:\n\n` + allUrls.join('\n'));
+})();
+
+   
+</pre>
+
+
+after it runs, just type this to copy:
+
+<pre>javascriptcopy(allUrls.join('\n')) </pre>
+
+
+
+## If you are logged into the Wordpress, you can also run following APIs as admin to grab the list of all posts
+
+https://netjoints.com/wp-json/wp/v2/posts?per_page=100&page=1
+
+https://netjoints.com/wp-json/wp/v2/posts?per_page=100&page=2
+

@@ -1,0 +1,464 @@
+{
+  "completed": [
+    "https://netjoints.com/elevating-aws-identity-center-security-the-power-of-just-in-time-access/",
+    "https://netjoints.com/securing-mcp-servers-for-agentic-ai-a-practical-guide-to-mcp-security-authorization-and-runtime-controls/",
+    "https://netjoints.com/britive-dynamic-secrets-in-ci-cd-pipelines-demo-script/"
+  ],
+  "failed": [
+    {
+      "url": "https://netjoints.com/netjoint-multicloud/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/user-vpn-open-vpn-in-azure/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/direct-connect-gateway/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/design-and-feature-requirement-for-a-user-vpn-solution/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/connecting-aviatrix-gateway-to-cisco-csr-in-the-same-aws-vpc/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/netjoint-multicloud/",
+      "error": "Could not find URL input field"
+    },
+    {
+      "url": "https://netjoints.com/user-vpn-open-vpn-in-azure/",
+      "error": "Could not find URL input field"
+    },
+    {
+      "url": "https://netjoints.com/direct-connect-gateway/",
+      "error": "Could not find URL input field"
+    },
+    {
+      "url": "https://netjoints.com/design-and-feature-requirement-for-a-user-vpn-solution/",
+      "error": "Could not find URL input field"
+    },
+    {
+      "url": "https://netjoints.com/connecting-aviatrix-gateway-to-cisco-csr-in-the-same-aws-vpc/",
+      "error": "Could not find URL input field"
+    },
+    {
+      "url": "https://netjoints.com/oci-initial-config/",
+      "error": "Could not find URL input field"
+    },
+    {
+      "url": "https://netjoints.com/oci-multicloud-transit/",
+      "error": "Could not find URL input field"
+    },
+    {
+      "url": "https://netjoints.com/netjoint-multicloud/",
+      "error": "Could not find URL input field - check debug-screenshot.png"
+    },
+    {
+      "url": "https://netjoints.com/user-vpn-open-vpn-in-azure/",
+      "error": "Could not find URL input field - check debug-screenshot.png"
+    },
+    {
+      "url": "https://netjoints.com/netjoint-multicloud/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/user-vpn-open-vpn-in-azure/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/direct-connect-gateway/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/netjoint-multicloud/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/user-vpn-open-vpn-in-azure/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/netjoint-multicloud/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/user-vpn-open-vpn-in-azure/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/direct-connect-gateway/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/design-and-feature-requirement-for-a-user-vpn-solution/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/connecting-aviatrix-gateway-to-cisco-csr-in-the-same-aws-vpc/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/oci-initial-config/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/oci-multicloud-transit/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/gcp-transit-networking-and-routing-with-aviatrix/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/what-is-aviatrix-cloudwan/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/aviatrix-cloudwan-deployment-with-aws-global-accelerator/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/aviatrix-controller-deployment-in-azure/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/azure-transit-network-design-patterns/",
+      "error": "Import may have failed"
+    },
+    {
+      "url": "https://netjoints.com/netjoint-multicloud/",
+      "error": "could not be imported",
+      "attempts": 3
+    },
+    {
+      "url": "https://netjoints.com/user-vpn-open-vpn-in-azure/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/netjoint-multicloud/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/user-vpn-open-vpn-in-azure/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-self-service-access-and-permission-builder/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/postgresql-just-in-time-cli-access-demo-script/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/securing-agentic-ai-with-amazon-bedrock-webinar/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/the-fatal-mistake-that-kills-startups-not-knowing-your-audience/",
+      "error": "Attempted to use detached Frame 'EC65CEA480707CB1AE4B847C36FC523E'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/zero-standing-privilege-for-k8s-a-must-have-for-secure-devops/",
+      "error": "Attempted to use detached Frame 'EC65CEA480707CB1AE4B847C36FC523E'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/troubleshooting-aws-bedrock-agentcore/",
+      "error": "Attempted to use detached Frame 'EC65CEA480707CB1AE4B847C36FC523E'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/agentic-ai-security-framework-and-deployment-guide/",
+      "error": "Attempted to use detached Frame 'EC65CEA480707CB1AE4B847C36FC523E'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/agentic-ai-identities-the-future-of-enterprise-access-control/",
+      "error": "Attempted to use detached Frame 'EC65CEA480707CB1AE4B847C36FC523E'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/guacamole-deployment-models/",
+      "error": "Attempted to use detached Frame 'EC65CEA480707CB1AE4B847C36FC523E'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/securing-agentic-ai-with-amazon-bedrock-webinar/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/the-fatal-mistake-that-kills-startups-not-knowing-your-audience/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/zero-standing-privilege-for-k8s-a-must-have-for-secure-devops/",
+      "error": "could not be imported",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/troubleshooting-aws-bedrock-agentcore/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/agentic-ai-security-framework-and-deployment-guide/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/agentic-ai-identities-the-future-of-enterprise-access-control/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/guacamole-deployment-models/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/a-pam-session-recording-architecture/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/understanding-iam-conditions-in-google-kubernetes-engine-gke/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/aws-eks-role-binding-and-oidc-configuration/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/gke-kubernetes-k8s-demo/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-access-broker-add-user-to-local-admin-group-jit/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/sumo-logic-inbound-https-webhook-configuration/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/guacamole-url-explained/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/aws-rds-for-oracle-db-engine/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/amazon-bedrock-agentcore-2/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/azure-resource-group-vs-specific-azure-resource-type/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/aws-bedrock-agent-to-agent-communication-and-collaboration/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/aws-bedrock-ai-agent-action-group/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/bigquery-constraint-why-is-it-a-bigdeal/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/what-is-gcp-pub-sub/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/gcp-iam-and-gcp-shared-service-account-concepts/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/amazon-bedrock-agentcore/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/okta-identity-provider-integration-with-britive-getting-started-guide/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/kubernetes-just-in-time-access/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-access-broker-troubleshooting-tips-and-best-practices-for-mysql-database/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/difference-between-rds-aws-aurora-and-mysql/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-access-broker-field-option-use-case/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/azure-pim-vs-cpam-key-differences-you-need-to-know/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-api-cli-to-trigger-cloud-data-scan/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/kubernetes-access-security-and-iam/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-datadog-siem-integration-steps/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-access-broker-installation/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-azure-onboarding-experience/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-aws-application-onboarding-experience/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-okta-application-onboarding-experience/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-aurora-mysql-demo/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/amazon-alexa-architecture-powering-britive-saas/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/protect-salesforce-environment-with-cost-optimization-for-admin-users/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/the-shocking-salt-typhoon-hack/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/world-of-complex-security-compliance-requirement-what-can-britive-do/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/britive-new-tenant-onboarding/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/the-challenge-of-standing-privileges-in-snowflake-for-admin-account/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/which-one-is-better-britive-or-cyberark/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/how-to-eliminate-aws-overly-permissive-iam-roles/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/gcp-just-in-time-jit-ephemeral-access-for-google-project-owners/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/what-is-ciem-where-is-works-and-where-it-fail/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/microsoft-azure-access-jit-checkout/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/azure-networking-limitations-and-constraints/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/de-buzz-review-cisco-hypershield-ai-native-security/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/aviatrix-kubernetes-innovation-kubecon-2024/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/insights-from-rsa-conference-2024/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    },
+    {
+      "url": "https://netjoints.com/important-ai-terms-to-remember/",
+      "error": "Attempted to use detached Frame '1AECB4AB835CEB0706A0E9C88779EF06'.",
+      "attempts": 1
+    }
+  ],
+  "lastCompleted": 4
+}
